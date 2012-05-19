@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Little Wire
+title: Home Page
 tagline: USB controlled AVR multi-tool
 ---
 {% include JB/setup %}
