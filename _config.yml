@@ -13,7 +13,7 @@ title : Little Wire
 tagline: USB controlled AVR multi-tool
 author :
   name : ihsan Kehribar
-  email : info@littlewire.cc
+  email : ihsan@kehribar.me
   github : littlewire
   twitter : ihsankehribar  
 
@@ -78,7 +78,7 @@ JB :
   # Set 'provider' to false to turn commenting off globally.
   #
   comments :
-    provider : disqus
+    provider : false
     disqus :
       short_name : jekyllbootstrap
     livefyre :
