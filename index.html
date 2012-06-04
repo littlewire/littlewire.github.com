@@ -1,0 +1,227 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+  
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+  <title>Little Wire</title>
+
+  
+  
+  <link rel="stylesheet" href="style.css" type="text/css">
+
+  
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-27159354-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  </script>
+</head><body style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" alink="#706c3c" link="#330000" vlink="#06992a">
+<div style="position: absolute; left: 20px; top: 30px; font-family: Lucida Sans Typewriter; font-weight: bold;" id="pageName"><big><big>Little Wire<br>
+</big></big></div>
+
+<br>
+
+<div style="position: fixed; top: 110px; left: 890px; list-style-type: none; font-family: Malgun Gothic; font-weight: inherit; line-height: 1.1em; font-size: 0.8em;" id="fixedNavigation"><span style="font-weight: bold;">Little Wire</span><br>
+* <a href="./index.html">intro</a><br>
+* <a href="http://blog.kehribar.me/?cat=4">news</a><br>
+* <a href="./downloads.html">downloads</a><br>
+* <a href="./pwm_servo.html">pwm &amp; servo</a><br>
+* <a href="./avrdude.html">avrdude setup</a><br>
+<!-- * <a href="./eclipse_setup.php">eclipse setup</a><br> -->
+<!-- * <a href="./avr_studio.php">Avr Studio setup</a><br> -->* <a href="./c_library.php">C library</a><br>
+* <a href="./c++">C++ library</a><br>
+* <a href="./processing">Processing library</a><br>
+<!-- * <a href="./csharp_library.php">C# library</a><br> -->
+</div>
+
+<div style="border-style: dotted; border-width: 1px; font-family: Lucida Console; font-size: 0.8em; line-height: 1.1em; font-weight: inherit; padding-left: 6px; padding-top: 6px; padding-bottom: 10px; width: 853px; z-index: 3; left: 20px; top: 95px; position: absolute;" id="mainText">
+<div id="myPhoto"><img style="width: 240px; height: 180px; float: right; margin-right: 10px; margin-top: 5px; padding-top: 0px; padding-left: 10px;" alt="" title="Little Wire beta in action" src="little-wire.jpg" align="right"></div>
+========================================<br>
+= Short story&nbsp; <br>
+========================================<br>
+- When i saw simpleavr's implementation of usbtiny on attiny45 , i
+thought it would be cool if i make a kit version of this with a minimal
+form factor. Then i designed a PCB and sent for first prototype. Later
+on i thought, if i want to sell this, it would be much cooler ,and more
+suitable with "Open Source Hardware" concept, if i bring this project
+one step ahead. So i tried to fit anything extra to the device and this
+project came out.<br>
+<br>
+========================================<br>
+= What is this?<br>
+========================================<br>
+- usbtiny compatable AVR programmer in minimal form factor with all
+through hole components<br>
+- Computer controllable (via USB) additional features: <br>
+&nbsp;&nbsp;&nbsp; - 4 channel digital input / output<br>
+&nbsp;&nbsp;&nbsp; - ADC with 10 bit resolution<br>
+&nbsp;&nbsp;&nbsp; - 2 paralel hardware PWM outputs&nbsp; <br>
+&nbsp;&nbsp;&nbsp; - SPI interface<br>
+&nbsp;&nbsp;&nbsp; - I2C interface<br>
+- Includes onboard serial bootloader for firmware upgrades! <br>
+- You can use it for &#8220;<a href="http://blog.kehribar.me/?p=36">Printf
+style debugging over AVR-ISP pins!</a>&#8221;<br>
+- USB to UART converter , by loading an other firmware (CDC-232 port)<br>
+<br>
+========================================<br>
+= What is pinout?<br>
+========================================<br>
+<table style="text-align: left; width: 734px; height: 107px;" border="1" cellpadding="2" cellspacing="0">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; text-align: left; text-decoration: underline;">Silkscreen
+      </td>
+      <td style="vertical-align: top;"><span style="text-decoration: underline;">AVR-ISP</span><br>
+      </td>
+      <td style="vertical-align: top; text-align: left; text-decoration: underline;">PWM/Servo<br>
+      </td>
+      <td style="vertical-align: top; text-align: left; text-decoration: underline;">ADC<br>
+      </td>
+      <td style="vertical-align: top;"><span style="text-decoration: underline;">I2C</span><br>
+      </td>
+      <td style="vertical-align: top;"><span style="text-decoration: underline;">SPI</span><br>
+      </td>
+      <td style="vertical-align: top;"><span style="text-decoration: underline;">CDC-232</span><br>
+      </td>
+      <td style="vertical-align: top;"><span style="text-decoration: underline;">Bootloader</span><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; text-align: left;">pin1<br>
+      </td>
+      <td style="vertical-align: top;">MISO</td>
+      <td style="vertical-align: top; text-align: left;">Channel_B<br>
+      </td>
+      <td style="vertical-align: top; text-align: left;">-<br>
+      </td>
+      <td style="vertical-align: top;">-<br>
+      </td>
+      <td style="vertical-align: top;">DO</td>
+      <td style="vertical-align: top;">TX<br>
+      </td>
+      <td style="vertical-align: top;">TX<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; text-align: left;">pin2<br>
+      </td>
+      <td style="vertical-align: top;">SCK</td>
+      <td style="vertical-align: top; text-align: left;">-<br>
+      </td>
+      <td style="vertical-align: top; text-align: left;">Channel_1<br>
+      </td>
+      <td style="vertical-align: top;">SCL<br>
+      </td>
+      <td style="vertical-align: top;">SCK<br>
+      </td>
+      <td style="vertical-align: top;">RX<br>
+      </td>
+      <td style="vertical-align: top;">-<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">pin3</td>
+      <td style="vertical-align: top;">RESET</td>
+      <td style="vertical-align: top;">-<br>
+      </td>
+      <td style="vertical-align: top;">Channel_0*</td>
+      <td style="vertical-align: top;">-</td>
+      <td style="vertical-align: top;">CS</td>
+      <td style="vertical-align: top;">-<br>
+      </td>
+      <td style="vertical-align: top;">-<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">pin4</td>
+      <td style="vertical-align: top;">MOSI</td>
+      <td style="vertical-align: top;">Channel_A</td>
+      <td style="vertical-align: top;">-<br>
+      </td>
+      <td style="vertical-align: top;">SDA</td>
+      <td style="vertical-align: top;">DI</td>
+      <td style="vertical-align: top;">-<br>
+      </td>
+      <td style="vertical-align: top;">RX<br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<small>* Analog reading from pin3 pin isn't stable but supported. Use
+it at your own risk.</small>&nbsp; <br>
+<br>
+========================================<br>
+= Possible usages<br>
+========================================<br>
+- AVR programming <span style="font-style: italic;">/summon
+captainObvious</span> <br>
+- LED dimming, color mixing&nbsp; <br>
+- General servo driving&nbsp;&nbsp; <br>
+- Pan and tilt servo control of a webcam for face tracking&nbsp; <br>
+- With additional motor driver IC, 2 wheel robot driving&nbsp;&nbsp; <br>
+- Analog voltage recording and plotting<br>
+- Controlling LED matrix displays by using SPI module to drive shift
+registers<br>
+- USB to SPI bridge<br>
+- USB to I2C bridge<br>
+- USB to UART bridge<br>
+- General purpose V-USB developement board<br>
+<br>
+========================================<br>
+= What is included?<br>
+========================================<br>
+- Eagle schematic / layout files. Also in PDF format.<br>
+- Microcontroller firmware files and makefile&nbsp; <br>
+- Bootloader source files<br>
+- Arduino library for &#8220;Printf style debugging over AVR-ISP pins!&#8221;<br>
+- C function/header files for command line USB interface for Windows
+and Linux<br>
+- C++ class for Windows and Linux <br>
+- Processing library for Windows ( With reduced feature set ... ) <br>
+- C# class for Windows USB interface ( in developement ... )<br>
+- Example C projects for almost every feature of the board&nbsp;&nbsp; <br>
+- Example C++ projects for almost every feature of the board&nbsp; <br>
+- Example Processing projects<br>
+- Example C# project for analog voltage plotting based on zedGraph<br>
+<br>
+========================================<br>
+= Reference projects<br>
+========================================<br>
+- This project is proudly and heavily based on <br>
+&nbsp;&nbsp;&nbsp; - V-USB stack<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <a href="http://www.obdev.at/vusb/">http://www.obdev.at/vusb/</a><br>
+&nbsp;&nbsp;&nbsp; - Original <span style="font-style: italic;">usbtiny</span>
+project<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <a href="http://www.xs4all.nl/%7Edicks/avr/usbtiny/">http://www.xs4all.nl/~dicks/avr/usbtiny/
+</a><br>
+&nbsp;&nbsp;&nbsp; - Ladyada version of <span style="font-style: italic;">usbtiny</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; <a href="http://www.ladyada.net/make/usbtinyisp/">http://www.ladyada.net/make/usbtinyisp/</a><br>
+&nbsp;&nbsp;&nbsp; - simpleavr's implementation of <span style="font-style: italic;">usbTiny</span> on attiny45
+microcontroller<br>
+&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; <a href="http://www.simpleavr.com/avr/vusbtiny">http://www.simpleavr.com/avr/vusbtiny</a><br>
+&nbsp;&nbsp;&nbsp; - Libusb library for C , C++ interface<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <a href="http://www.libusb.org/wiki/libusb-win32">http://www.libusb.org/</a><br>
+&nbsp;&nbsp;&nbsp; - Libusbdotnet library for C# inteface<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <a href="http://libusbdotnet.sourceforge.net/V2/Index.html">http://libusbdotnet.sourceforge.net/V2/Index.html</a><br>
+&nbsp;&nbsp;&nbsp; - Libusbjava library for Processing interface<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <a href="http://libusbjava.sourceforge.net/">http://libusbjava.sourceforge.net</a><br>
+&nbsp;&nbsp;&nbsp; - "<span style="font-style: italic;">fast tiny &amp;
+mega UART bootloader</span>" project from AVR freaks<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <a href="http://tinyurl.com/fastTinyAndMega-UARTbootloader">http://tinyurl.com/fastTinyAndMega-UARTbootloader</a><br>
+&nbsp;&nbsp;&nbsp; - USIi2c library for I2C implementation<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <a href="http://arduino.cc/playground/Code/USIi2c">http://arduino.cc/playground/Code/USIi2c</a><br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; <br>
+========================================<br>
+= When this project will be completed?<br>
+========================================<br>
+- As soon as possible ...<br>
+</div>
+
+</body></html>
