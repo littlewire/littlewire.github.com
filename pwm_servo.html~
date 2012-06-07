@@ -30,7 +30,6 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 
 <div style="position: fixed; top: 110px; left: 890px; list-style-type: none; font-family: Malgun Gothic; font-weight: inherit; line-height: 1.1em; font-size: 0.8em;" id="fixedNavigation"><span style="font-weight: bold;">Little Wire</span><br>
 * <a href="./index.html">intro</a><br>
-* <a href="./documentation.html">documentation</a><br>
 * <a href="http://blog.kehribar.me/?cat=4">news</a><br>
 * <a href="./downloads.html">downloads</a><br>
 * <a href="./pwm_servo.html">pwm &amp; servo</a><br>

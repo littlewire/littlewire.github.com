@@ -1,14 +1,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html><head>
-  
   <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
   <title>Little Wire</title>
 
-  
-  
+
   <link rel="stylesheet" href="style.css" type="text/css">
 
-  
   <script type="text/javascript">
 
 var _gaq = _gaq || [];
@@ -30,7 +27,6 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 
 <div style="position: fixed; top: 110px; left: 890px; list-style-type: none; font-family: Malgun Gothic; font-weight: inherit; line-height: 1.1em; font-size: 0.8em;" id="fixedNavigation"><span style="font-weight: bold;">Little Wire</span><br>
 * <a href="./index.html">intro</a><br>
-* <a href="./documentation.html">documentation</a><br>
 * <a href="http://blog.kehribar.me/?cat=4">news</a><br>
 * <a href="./downloads.html">downloads</a><br>
 * <a href="./pwm_servo.html">pwm &amp; servo</a><br>
@@ -43,37 +39,27 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
 </div>
 
 <div style="border-style: dotted; border-width: 1px; font-family: Lucida Console; font-size: 0.8em; line-height: 1.1em; font-weight: inherit; padding-left: 6px; padding-top: 6px; padding-bottom: 10px; width: 853px; z-index: 3; left: 20px; top: 95px; position: absolute;" id="mainText">
-<div id="myPhoto"><img style="height: 180px; float: right; margin-right: 10px; margin-top: 5px;" alt="" title="Gnu is Not Unix" src="gnu.png" align="right"></div>
-&nbsp;
+<div id="myPhoto"><img style="height: 180px; float: right; margin-right: 10px; margin-top: 5px;" alt="" title="" src="repository.jpg"></div>
 <br>
-&nbsp;&nbsp;&nbsp; Let's say you have a compiled hex file you want
-to upload to your microcontroller via Little-Wire. To do so, first you
-have to download <a href="http://winavr.sourceforge.net/">WinAVR</a>
-package for Windows. For linux, you can type <span style="font-style: italic;">sudo apt-get install avrdude</span> .
-After you set up your environment, you can use the command below at
-your terminal:<br>
+&nbsp;&nbsp; You can browse software/firmware files at:<br>
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <a href="https://github.com/kehribar/Little-Wire">https://github.com/kehribar/Little-Wire</a>
 <br>
-&nbsp;&nbsp;&nbsp; <span style="font-style: italic;">avrdude -c
-usbtiny -p m8 -U flash:w:main.hex</span><br style="font-style: italic;">
+&nbsp;&nbsp; <br>
+&nbsp;&nbsp; If you want to download the entrie repository at once,
+follow:<br>
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <a href="https://github.com/kehribar/Little-Wire/zipball/master">https://github.com/kehribar/Little-Wire/zipball/master</a><br>
 <br>
-&nbsp;&nbsp;&nbsp; At this command, we assumed that name of the
-compiled hex file is "main.hex" and we are using Atmega8 as target
-microcontroller. To fix this command for your target microcontroller,
-you have to know what is the part number of your device. You can find
-that list at <a href="http://www.nongnu.org/avrdude/user-manual/avrdude_4.html">here</a>.<br>
+&nbsp;&nbsp; Hardware file previews are supported by:<br>
+&nbsp;&nbsp; &nbsp;&nbsp; <a href="http://solderpad.com/ihsan_kehribar/minimal-avr-programmer-and-more/">http://solderpad.com/ihsan_kehribar/minimal-avr-programmer-and-more/</a><br>
 <br>
-&nbsp;&nbsp;&nbsp; For linux, in order to use Little Wire as a
-programmer, call avrdude with root privileges. For example:<br>
+&nbsp;&nbsp; You can download schematic file from <a href="https://solderpad.com/git/ihsan_kehribar/minimal-avr-programmer-and-more/plain/Little-Wire.sch"><span style="text-decoration: underline;">here</span></a><br>
+&nbsp;&nbsp; You can download board layout file from <a href="https://solderpad.com/git/ihsan_kehribar/minimal-avr-programmer-and-more/plain/Little-Wire.brd"><span style="text-decoration: underline;">here</span></a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
 <br>
-&nbsp;&nbsp;&nbsp;<span style="font-style: italic;"> sudo avrdude -c
-usbtiny -p m8 -U flash:w:main.hex&nbsp;&nbsp; </span><br>
 <br>
-&nbsp;&nbsp;&nbsp; You can also look to the detailed tutorials written
-by Ladyada:<br>
-<br>
-&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; <a href="http://www.ladyada.net/make/usbtinyisp/avrdude.html">http://www.ladyada.net/make/usbtinyisp/avrdude.html</a><br>
-&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; <a href="http://www.ladyada.net/learn/avr/avrdude.html">http://www.ladyada.net/learn/avr/avrdude.html</a><br>
-<br>
+----------------------------------------------------------------------------------------------------------<br>
+<center><iframe src="http://solderpad.com/ihsan_kehribar/minimal-avr-programmer-and-more/schematic/embed" marginheight="0" marginwidth="0" frameborder="0" height="500" scrolling="no" width="98%"></iframe></center>
+<center><iframe src="http://solderpad.com/ihsan_kehribar/minimal-avr-programmer-and-more/board/embed" marginheight="0" marginwidth="0" frameborder="0" height="500" scrolling="no" width="98%"></iframe></center>
 </div>
 
 </body></html>
