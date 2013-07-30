@@ -1,8 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>  
-  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Little Wire</title>
-  <link rel="stylesheet" href="style.css" type="text/css">
+  <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>>> Little Wire</title>
   <script type="text/javascript">
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-27159354-1']);
@@ -14,227 +13,237 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
   </script>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'> 
+
+  <style>
+    #mainContent
+    {      
+      border-style: dotted; 
+      border-width: 1px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: -50px;
+      width: 810px;
+      position: relative;
+      top: -17px;
+    }
+
+    #Navigation
+    {
+      position: relative;
+      top: -20px;
+    }
+
+  </style>
 </head>
 
-<body style="color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);" alink="#706c3c" link="#330000" vlink="#06992a">
-<div style="position: absolute; left: 20px; top: 30px; font-family: Lucida Sans Typewriter; font-weight: bold;" id="pageName"><big><big>Little Wire<br>
-</big></big></div>
+<body>
 
-<br>
-
-<div style="position: fixed; top: 110px; left: 890px; list-style-type: none; font-family: Malgun Gothic; font-weight: inherit; line-height: 1.1em; font-size: 0.8em;" id="fixedNavigation"><span style="font-weight: bold;">Little Wire</span><br>
-* <a href="./index.html">intro</a><br>
-* <a href="./documentation.html">documentation</a><br>
-* <a href="http://blog.kehribar.me/?cat=4">news</a><br>
-* <a href="./downloads.html">downloads</a><br>
-* <a href="./pwm_servo.html">pwm &amp; servo</a><br>
-* <a href="./avrdude.html">avrdude setup</a><br>
-<!-- * <a href="./eclipse_setup.php">eclipse setup</a><br> -->
-<!-- * <a href="./avr_studio.php">Avr Studio setup</a><br> -->* <a href="./c_library.html">C library</a><br>
-* <a href="./c++">C++ library</a><br>
-* <a href="./processing">Processing library</a><br>
-<!-- * <a href="./csharp_library.php">C# library</a><br> -->
+<div id="Header">
+  <h1>>> Little Wire</h1>
 </div>
 
-<div style="border-style: dotted; border-width: 1px; font-family: Lucida Console; font-size: 0.8em; line-height: 1.1em; font-weight: inherit; padding-left: 6px; padding-top: 6px; padding-bottom: 10px; width: 853px; z-index: 3; left: 20px; top: 95px; position: absolute;" id="mainText">
-<div id="myPhoto"><img style="width: 240px; height: 180px; float: right; margin-right: 10px; margin-top: 5px; padding-top: 0px; padding-left: 10px;" alt="" title="Little Wire beta in action" src="little-wire.jpg" align="right"></div>
-========================================<br>
-= Short story&nbsp; <br>
-========================================<br>
-- When i saw simpleavr's implementation of usbtiny on attiny45 , i
-thought it would be cool if i make a kit version of this with a minimal
-form factor. Then i designed a PCB and sent for first prototype. Later
-on i thought, if i want to sell this, it would be much cooler ,and more
-suitable with "Open Source Hardware" concept, if i bring this project
-one step ahead. So i tried to fit anything extra to the device and this
-project came out.<br>
-<br>
-<b>V1.1 beta firmware released for the Little Wire. You can find the changelog and details from this <a href="http://blog.kehribar.me/?p=139">link</a>.</b>
-<br>
-<br>
-========================================<br>
-= What is this?<br>
-========================================<br>
-- usbtiny compatable AVR programmer in minimal form factor with all
-through hole components<br>
-- Computer controllable (via USB) additional features: <br>
-&nbsp;&nbsp;&nbsp; - 4 channel digital input / output<br>
-&nbsp;&nbsp;&nbsp; - ADC with 10 bit resolution<br>
-&nbsp;&nbsp;&nbsp; - 2 paralel hardware PWM outputs&nbsp; <br>
-&nbsp;&nbsp;&nbsp; - 3 paralel software PWM outputs <i>(with v1.1 firmware)</i><br>
-&nbsp;&nbsp;&nbsp; - SPI interface<br>
-&nbsp;&nbsp;&nbsp; - I2C interface<br>
-&nbsp;&nbsp;&nbsp; - 1 Wire interface <i>(with v1.1 firmware)</i><br>
-&nbsp;&nbsp;&nbsp; - <a href="http://blog.kehribar.me/?p=171">Pic24f programmer with limited device support</a> <i>(with v1.1 firmware)</i> <br>
-- Includes onboard serial bootloader for firmware upgrades! <br>
-- You can use it for &#8220;<a href="http://blog.kehribar.me/?p=36">Printf
-style debugging over AVR-ISP pins!</a>&#8221;<br>
-- USB to UART converter , by loading an other firmware (CDC-232 port)<br>
-<br>
-<br>
-========================================<br>
-= Where can i buy one?<br>
-========================================<br>- It is available at Seeedstudio right now! <br>
-<a href="http://www.seeedstudio.com/depot/little-wire-p-1212.html?cPath=174">http://www.seeedstudio.com/depot/little-wire-p-1212.html?cPath=174</a><br>
-<br>
-========================================<br>
-= What is pinout?<br>
-========================================<br>
-<table style="text-align: left; width: 734px; height: 107px;" border="1" cellpadding="2" cellspacing="0">
-  <tbody>
-    <tr>
-      <td style="vertical-align: top; text-align: left; text-decoration: underline;">Silkscreen
-      </td>
-      <td style="vertical-align: top;"><span style="text-decoration: underline;">AVR-ISP</span><br>
-      </td>
-      <td style="vertical-align: top; text-align: left; text-decoration: underline;">PWM/Servo<br>
-      </td>
-      <td style="vertical-align: top; text-align: left; text-decoration: underline;">ADC<br>
-      </td>
-      <td style="vertical-align: top;"><span style="text-decoration: underline;">I2C</span><br>
-      </td>
-      <td style="vertical-align: top;"><span style="text-decoration: underline;">SPI</span><br>
-      </td>
-      <td style="vertical-align: top;"><span style="text-decoration: underline;">CDC-232</span><br>
-      </td>
-      <td style="vertical-align: top;"><span style="text-decoration: underline;">Bootloader</span><br>
-      </td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top; text-align: left;">pin1<br>
-      </td>
-      <td style="vertical-align: top;">MISO</td>
-      <td style="vertical-align: top; text-align: left;">Channel_B<br>
-      </td>
-      <td style="vertical-align: top; text-align: left;">-<br>
-      </td>
-      <td style="vertical-align: top;">-<br>
-      </td>
-      <td style="vertical-align: top;">DO</td>
-      <td style="vertical-align: top;">TX<br>
-      </td>
-      <td style="vertical-align: top;">TX<br>
-      </td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top; text-align: left;">pin2<br>
-      </td>
-      <td style="vertical-align: top;">SCK</td>
-      <td style="vertical-align: top; text-align: left;">-<br>
-      </td>
-      <td style="vertical-align: top; text-align: left;">Channel_1<br>
-      </td>
-      <td style="vertical-align: top;">SCL<br>
-      </td>
-      <td style="vertical-align: top;">SCK<br>
-      </td>
-      <td style="vertical-align: top;">RX<br>
-      </td>
-      <td style="vertical-align: top;">-<br>
-      </td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top;">pin3</td>
-      <td style="vertical-align: top;">RESET</td>
-      <td style="vertical-align: top;">-<br>
-      </td>
-      <td style="vertical-align: top;">Channel_0*</td>
-      <td style="vertical-align: top;">-</td>
-      <td style="vertical-align: top;">CS</td>
-      <td style="vertical-align: top;">-<br>
-      </td>
-      <td style="vertical-align: top;">-<br>
-      </td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top;">pin4</td>
-      <td style="vertical-align: top;">MOSI</td>
-      <td style="vertical-align: top;">Channel_A</td>
-      <td style="vertical-align: top;">-<br>
-      </td>
-      <td style="vertical-align: top;">SDA</td>
-      <td style="vertical-align: top;">DI</td>
-      <td style="vertical-align: top;">-<br>
-      </td>
-      <td style="vertical-align: top;">RX<br>
-      </td>
-    </tr>
-  </tbody>
+<div id="Navigation">
+  <h3>
+    <a href="./index.html">_homepage</a>
+    <a href="./downloads.html">_downloads</a>
+    <a href="./contact.html">_contact</a>
+    <a href="./donation.html">_donation</a>
+    <a href="./documentation/">_documentation</a>
+    <a href="./oldsite">_oldsite</a>
+  </h3>
+</div>
+
+<div id="mainContent">
+<!--***************************** Main content starts. *****************************-->
+
+<p><img src="./resources/littlewire.jpg" alt="little wire" /></p>
+
+<h2>Short Story</h2>
+
+<p>When i saw simpleavr's <a href="http://www.simpleavr.com/avr/vusbtiny">implementation</a> of usbtiny on attiny45 , i thought it would be cool if i make a kit version of this with a minimal form factor. Then i designed a PCB and sent for first prototype. Later on i thought, if i want to sell this, it would be much cooler ,and more suitable with "<a href="http://www.oshwa.org/definition/">Open Source Hardware</a>" concept, if i bring this project one step ahead. So i tried to fit anything extra to the device and this <i>Little Wire</i> project came out.</p>
+
+<p><strong>Little Wire</strong> is multi-featured USB controlled Open Source Hardware tool packed in a minimal form factor designed by ihsan Kehribar.</p>
+
+<p>I collaborated with the <a href="http://www.seeedstudio.com">Seeedstudio</a> and they produced an initial batch for me and <em>Little Wire</em> kits went <a href="http://www.seeedstudio.com/depot/little-wire-p-1212.html">online</a> in June 2012. After that batch finished in April 2013, <em>notice the time difference</em>, I decided not to continue producing them through contract manifacturing. Currently, you can't buy readymade <em>Little Wire</em> kits but since this is an OSHW project, you are free and welcomed to produce your own version.</p>
+
+<p>Current firmware/software release version is <strong>v1.2</strong>. If your <i>Little Wire</i> isn't loaded with the latest firmware you can still use the <a href="./oldsite/index.html">old web site</a> for reference or you can download the archive software/firmware releases from <a href="./downloads.html">downloads</a> page, but I advise you to upgrade your firmware. Below, you find how you can do this.</p>
+
+<h2>Features</h2>
+
+<ul>
+<li><em>usbtinyisp</em> compatable AVR programmer.</li>
+<li>4 channel GPIO.</li>
+<li>ADC with 10 bit resolution.</li>
+<li>2 parallel hardware PWM outputs.</li>
+<li>SPI interface.</li>
+<li>I2C interface.</li>
+<li>1-Wire interface</li>
+<li>WS2812 RGB LED interface.</li>
+<li>Multiple device support.</li>
+</ul>
+
+
+<h3>Experimental Features</h3>
+
+<ul>
+<li>3 parallel software PWM outputs.</li>
+<li><a href="http://blog.kehribar.me/?p=36">Printf style debugging over AVR-ISP pins!</a></li>
+<li><a href="http://blog.kehribar.me/?p=171">Pic24f programmer with limited device support.</a></li>
+<li>USB to UART converter, by loading another firmware <em>(<a href="http://www.recursion.jp/avrcdc/cdc-232.html">CDC-232</a> port)</em> Maximum advised baud rate is 4800 bps.</li>
+</ul>
+
+<p><strong>Note:</strong> This tool has to take instructions at run-time over USB. It can't work in a computerless environment.</p>
+
+<h2>Pin Mapping</h2>
+
+<table>
+<thead>
+<tr>
+<th>Silkscreen</th>
+<th>usbtinyisp</th>
+<th>Hard PWM</th>
+<th>Soft PWM</th>
+<th>ADC </th>
+<th>I2C</th>
+<th>SPI</th>
+<th>Onewire</th>
+<th>WS2812</th>
+<th>CDC-232</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pin1      </td>
+<td>MISO      </td>
+<td>CH_B    </td>
+<td>CH_2    </td>
+<td>-   </td>
+<td>-  </td>
+<td>DO </td>
+<td>-      </td>
+<td>DATA  </td>
+<td>TX     </td>
+</tr>
+<tr>
+<td>pin2      </td>
+<td>SCK       </td>
+<td>-       </td>
+<td>CH_3    </td>
+<td>CH_1</td>
+<td>SCL</td>
+<td>SCK</td>
+<td>DATA   </td>
+<td>DATA  </td>
+<td>-      </td>
+</tr>
+<tr>
+<td>pin3      </td>
+<td>RESET     </td>
+<td>-       </td>
+<td>-       </td>
+<td>CH_0</td>
+<td>-  </td>
+<td>CS </td>
+<td>-      </td>
+<td>DATA  </td>
+<td>-      </td>
+</tr>
+<tr>
+<td>pin4      </td>
+<td>MOSI      </td>
+<td>CH_A    </td>
+<td>CH_1    </td>
+<td>-   </td>
+<td>SDA</td>
+<td>DI </td>
+<td>-      </td>
+<td>DATA  </td>
+<td>RX     </td>
+</tr>
+</tbody>
 </table>
-<small>* Analog reading from pin3 pin isn't stable but supported. Use
-it at your own risk.</small>&nbsp; <br>
-<br>
-========================================<br>
-= Possible usages<br>
-========================================<br>
-- AVR programming <span style="font-style: italic;">/summon
-captainObvious</span> <br>
-- LED dimming, color mixing&nbsp; <br>
-- General servo driving&nbsp;&nbsp; <br>
-- Pan and tilt servo control of a webcam for face tracking&nbsp; <br>
-- With additional motor driver IC, 2 wheel robot driving&nbsp;&nbsp; <br>
-- Analog voltage recording and plotting<br>
-- Controlling LED matrix displays by using SPI module to drive shift
-registers<br>
-- USB to SPI bridge<br>
-- USB to I2C bridge<br>
-- USB to UART bridge<br>
-- General purpose V-USB developement board<br>
-<br>
-========================================<br>
-= What is included?<br>
-========================================<br>
-- Eagle schematic / layout files. Also in PDF format.<br>
-- Microcontroller firmware files and makefile&nbsp; <br>
-- Bootloader source files<br>
-- Arduino library for &#8220;Printf style debugging over AVR-ISP pins!&#8221;<br>
-- C function/header files for command line USB interface for Windows
-and Linux<br>
-- C++ class for Windows and Linux <br>
-- Processing library for Windows ( With reduced feature set ... ) <br>
-- C# class for Windows USB interface ( in developement ... )<br>
-- Example C projects for almost every feature of the board&nbsp;&nbsp; <br>
-- Example C++ projects for almost every feature of the board&nbsp; <br>
-- Example Processing projects<br>
-- Example C# project for analog voltage plotting based on zedGraph<br>
-<br>
-========================================<br>
-= Reference projects<br>
-========================================<br>
-- This project is proudly and heavily based on <br>
-&nbsp;&nbsp;&nbsp; - V-USB stack<br>
-&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <a href="http://www.obdev.at/vusb/">http://www.obdev.at/vusb/</a><br>
-&nbsp;&nbsp;&nbsp; - Original <span style="font-style: italic;">usbtiny</span>
-project<br>
-&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <a href="http://www.xs4all.nl/%7Edicks/avr/usbtiny/">http://www.xs4all.nl/~dicks/avr/usbtiny/
-</a><br>
-&nbsp;&nbsp;&nbsp; - Ladyada version of <span style="font-style: italic;">usbtiny</span><br>
-&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; <a href="http://www.ladyada.net/make/usbtinyisp/">http://www.ladyada.net/make/usbtinyisp/</a><br>
-&nbsp;&nbsp;&nbsp; - simpleavr's implementation of <span style="font-style: italic;">usbTiny</span> on attiny45
-microcontroller<br>
-&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; <a href="http://www.simpleavr.com/avr/vusbtiny">http://www.simpleavr.com/avr/vusbtiny</a><br>
-&nbsp;&nbsp;&nbsp; - Libusb library for C , C++ interface<br>
-&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <a href="http://www.libusb.org/wiki/libusb-win32">http://www.libusb.org/</a><br>
-&nbsp;&nbsp;&nbsp; - Libusbdotnet library for C# inteface<br>
-&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <a href="http://libusbdotnet.sourceforge.net/V2/Index.html">http://libusbdotnet.sourceforge.net/V2/Index.html</a><br>
-&nbsp;&nbsp;&nbsp; - Libusbjava library for Processing interface<br>
-&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <a href="http://libusbjava.sourceforge.net/">http://libusbjava.sourceforge.net</a><br>
-&nbsp;&nbsp;&nbsp; - "<span style="font-style: italic;">fast tiny &amp;
-mega UART bootloader</span>" project from AVR freaks<br>
-&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <a href="http://tinyurl.com/fastTinyAndMega-UARTbootloader">http://tinyurl.com/fastTinyAndMega-UARTbootloader</a><br>
-&nbsp;&nbsp;&nbsp; - USIi2c library for I2C implementation<br>
-&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <a href="http://arduino.cc/playground/Code/USIi2c">http://arduino.cc/playground/Code/USIi2c</a><br>
-&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; <br>
-========================================<br>
-= Please note! <br>
-========================================<br>
-Do not use the Adafruit USB VID/PID without written permission from
-Adafruit Industries, LLC and Limor "Ladyada" Fried
-(support@adafruit.com). Permission is granted for littlewire Ihsan
-Kehribar and Seeed Studio by Adafruit Industries, LLC to use the
-Adafruit USB VID/PID for littlewire (SKU:AVR06071P)<br>
-<br>
-<br>
-</div>
 
-</body></html>
+<h2>Software Support</h2>
+
+<p>When i first released <em>Little Wire</em> , it had native C,C++,C# and Processing support through custom libraries written by me. Later, maintaining multiple software libraries became a very demanding task. Therefore I dropped support for C++,C# and Processing libraries with the v1.2 release of <em>Little Wire</em>. If you still use your v1.0 / v1.1 firmware you can look at the archive releases to get support for those languages. <strong>Beware</strong>, software libraries are <strong>not</strong> backward/forward compatible and I definitely advice you to get the latest v1.2 firmware onto your device.</p>
+
+<p>Doxygen documentation for the current <em>C library</em> can be found here: <a href="http://littlewire.cc/documentation/">http://littlewire.cc/documentation/</a></p>
+
+<p>For further support, please take a look at <em>examples</em> folder. If you want to contribute an example you can make a pull request so that I can add it to the main repo, or if you find a bug in one of the examples please open an issue ticket.</p>
+
+<h3>Ruby library: <em>littlewire.rb</em></h3>
+
+<p>Even though this is not an official and complete library for the <em>Little Wire</em>, it is well developed and worth mentioning. This library is maintained by <a href="http://twitter.com/bluebie">@Bluebie</a> and covers <em>most</em> of the <em>Little Wire</em> features. If you are interested in controlling your <em>Little Wire</em> device from Ruby, it would be worth looking. You can find the details about this library here: <a href="https://github.com/Bluebie/littlewire.rb">https://github.com/Bluebie/littlewire.rb</a></p>
+
+<h2>Firmware Upgrade / Installation</h2>
+
+<h3>If you have a bare Attiny85 chip:</h3>
+
+<ul>
+<li><p>First, you should upload the <em>micronucleus</em> bootloader software to your chip and you should set the fuses properly. Following is an example</p>
+
+<pre><code>  avrdude -c usbtiny -p t85 -U flash:w:micronucleus-1.02.hex -U lfuse:w:0xe1:m -U hfuse:w:0x5d:m -U efuse:w:0xfe:m
+</code></pre></li>
+<li><p>After you upload the bootloader to your chip, you can follow the steps below.</p></li>
+</ul>
+
+<h3>If your Attiny85 has <em>micronucleus</em> bootloader installed:</h3>
+
+<ul>
+<li><p>You can upload the desired firmware via the micronucleus commandline application.</p>
+
+<pre><code>  micronucleus littlewire_v12.hex
+</code></pre></li>
+<li><p>You can find the micronucleus commandline application from here: <a href="https://github.com/Bluebie/micronucleus-t85">https://github.com/Bluebie/micronucleus-t85</a></p></li>
+</ul>
+
+<h3>If your Attiny85 has <em>fast tiny &amp; mega UART</em> bootloader installed:</h3>
+
+<ul>
+<li>You can upload the latest firmware via onboard bootloader, but I don't recommend this.</li>
+<li>You can use a HVSP programmer like STK500, AVR Dragon or a high voltage fuse resetter device like "HV Rescue Shield" or "HSVP Fuse Resetter" to reset your device completely. After you disable the RSTDISBL fuse, you can follow the <em>"If you have a bare Attiny85 chip"</em> steps.</li>
+<li>You can buy an empty Attiny85 chip and start from the begining.</li>
+</ul>
+
+
+<h3>If you bought your <em>Little Wire</em> from Seeedstudio:</h3>
+
+<ul>
+<li>Unfortunately, micronucleus bootloader wasn't a <em>thing</em> when I was designing the v1.0 release of the <em>Little Wire</em>. Therefore your device has the <em>fast tiny &amp; mega UART</em> bootloader. You can follow the steps above.</li>
+</ul>
+
+
+<h2>Where are the pre-compiled binaries, drivers and archives?</h2>
+
+<p>You can find them from the downloads page: <a href="http://littlewire.cc/downloads.html">http://littlewire.cc/downloads.html</a></p>
+
+<h2>Reference projects</h2>
+
+<ul>
+<li>This project is proudly and heavily based on:
+
+<ul>
+<li>Original usbtiny project: <a href="http://www.xs4all.nl/~dicks/avr/usbtiny/">http://www.xs4all.nl/~dicks/avr/usbtiny/</a></li>
+<li>Ladyada version of usbtiny: <a href="http://www.ladyada.net/make/usbtinyisp">http://www.ladyada.net/make/usbtinyisp</a>/</li>
+<li>simpleavr's implementation of usbtiny on Attiny45: <a href="http://www.simpleavr.com/avr/vusbtiny">http://www.simpleavr.com/avr/vusbtiny</a></li>
+<li>"fast tiny &amp; mega UART bootloader" project from AVR freaks: <a href="http://tinyurl.com/fastTinyAndMega-UARTbootloader">http://tinyurl.com/fastTinyAndMega-UARTbootloader</a></li>
+<li>Micronucleus bootloader: <a href="https://github.com/Bluebie/micronucleus-t85">https://github.com/Bluebie/micronucleus-t85</a></li>
+</ul>
+</li>
+</ul>
+
+<h2>Please note:</h2>
+
+<pre><code>Do not use the Adafruit USB VID/PID without written permission from Adafruit Industries, LLC and 
+Limor "Ladyada" Fried (support@adafruit.com). Permission is granted for littlewire, Ihsan Kehribar
+and Seeed Studio by Adafruit Industries, LLC to use the Adafruit USB VID/PID for littlewire 
+(SKU:AVR06071P)     
+</code></pre>
+
+<!--***************************** Main content ends. *******************************-->
+</div>
+</body>
+</html>
