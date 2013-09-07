@@ -1,6 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>  
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
   <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>>> Little Wire</title>
   <script type="text/javascript">
     var _gaq = _gaq || [];
@@ -204,9 +205,10 @@
 <h3>If your Attiny85 has <em>fast tiny &amp; mega UART</em> bootloader installed:</h3>
 
 <ul>
-<li>You can upload the latest firmware via onboard bootloader, but I don't recommend this.</li>
+<li>You can upload the latest firmware via onboard bootloader, but I don't recommend sticking to the old bootlodaer, you should change it. Micronucleus is really good ...</li>
 <li>You can use a HVSP programmer like STK500, AVR Dragon or a high voltage fuse resetter device like "HV Rescue Shield" or "HSVP Fuse Resetter" to reset your device completely. After you disable the RSTDISBL fuse, you can follow the <em>"If you have a bare Attiny85 chip"</em> steps.</li>
 <li>You can buy an empty Attiny85 chip and start from the begining.</li>
+<li>You can replace your bootloader via, uploading a "upgrader firmware". This type of firmware is a very special invention comes from Blubie (<i>Jenna Fox</i>) which replaces the onboard bootloader with the micronucleus. You can read more about this technique from here: <a href="https://github.com/Bluebie/micronucleus-t85/tree/master/upgrade">https://github.com/Bluebie/micronucleus-t85/tree/master/upgrade</a>. It is a very experimental technique but many people reported that this is working and you might want to try it too.
 </ul>
 
 
