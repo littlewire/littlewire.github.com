@@ -71,7 +71,7 @@
 
 <p>I collaborated with the <a href="http://www.seeedstudio.com">Seeedstudio</a> and they produced an initial batch for me and <em>Little Wire</em> kits went <a href="http://www.seeedstudio.com/depot/little-wire-p-1212.html">online</a> in June 2012. After that batch finished in April 2013, <em>notice the time difference</em>, I decided not to continue producing them through contract manifacturing. Currently, you can't buy readymade <em>Little Wire</em> kits but since this is an OSHW project, you are free and welcomed to produce your own version.</p>
 
-<p>Current firmware/software release version is <strong>v1.2</strong>. If your <i>Little Wire</i> isn't loaded with the latest firmware you can still use the <a href="./oldsite/index.html">old web site</a> for reference or you can download the archive software/firmware releases from <a href="./downloads.html">downloads</a> page, but I advise you to upgrade your firmware. Below, you find how you can do this.</p>
+<p>Current firmware/software release version is <strong>v1.3</strong>. If your <i>Little Wire</i> isn't loaded with the v1.3 or the v1.2 firmware you can still use the <a href="./oldsite/index.html">old web site</a> for reference or you can download the archive software/firmware releases from <a href="./downloads.html">downloads</a> page, but I advise you to upgrade your firmware. Below, you find how you can do this.</p>
 
 <h2>Features</h2>
 
@@ -93,7 +93,7 @@
 <ul>
 <li>3 parallel software PWM outputs.</li>
 <li><a href="http://blog.kehribar.me/?p=36">Printf style debugging over AVR-ISP pins!</a></li>
-<li><a href="http://blog.kehribar.me/?p=171">Pic24f programmer with limited device support.</a></li>
+<li style="text-decoration:line-through">Pic24f programmer with limited device support.</li>
 <li>USB to UART converter, by loading another firmware <em>(<a href="http://www.recursion.jp/avrcdc/cdc-232.html">CDC-232</a> port)</em> Maximum advised baud rate is 4800 bps.</li>
 </ul>
 
@@ -170,7 +170,7 @@
 
 <h2>Software Support</h2>
 
-<p>When i first released <em>Little Wire</em> , it had native C,C++,C# and Processing support through custom libraries written by me. Later, maintaining multiple software libraries became a very demanding task. Therefore I dropped support for C++,C# and Processing libraries with the v1.2 release of <em>Little Wire</em>. If you still use your v1.0 / v1.1 firmware you can look at the archive releases to get support for those languages. <strong>Beware</strong>, software libraries are <strong>not</strong> backward/forward compatible and I definitely advice you to get the latest v1.2 firmware onto your device.</p>
+<p>When i first released <em>Little Wire</em> , it had native C,C++,C# and Processing support through custom libraries written by me. Later, maintaining multiple software libraries became a very demanding task. Therefore I dropped support for C++,C# and Processing libraries with the v1.3 release of <em>Little Wire</em>. If you still use your v1.0 / v1.1 firmware you can look at the archive releases to get support for those languages. <strong>Beware</strong>, software libraries are <strong>not</strong> backward/forward compatible and I definitely advice you to get the latest v1.2 firmware onto your device.</p>
 
 <p>Doxygen documentation for the current <em>C library</em> can be found here: <a href="http://littlewire.cc/documentation/">http://littlewire.cc/documentation/</a></p>
 
@@ -197,7 +197,7 @@
 <ul>
 <li><p>You can upload the desired firmware via the micronucleus commandline application.</p>
 
-<pre><code>  micronucleus littlewire_v12.hex
+<pre><code>  micronucleus littlewire_v13.hex
 </code></pre></li>
 <li><p>You can find the micronucleus commandline application from here: <a href="https://github.com/Bluebie/micronucleus-t85">https://github.com/Bluebie/micronucleus-t85</a></p></li>
 </ul>
